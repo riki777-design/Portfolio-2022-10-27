@@ -1,0 +1,491 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+
+header {
+  background-color: rgb(51, 51, 51);
+  color: rgb(242, 242, 242);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+  border-bottom: solid 0.4px rgb(242, 242, 242);
+  z-index: 3;
+}
+@media screen and (max-width: 480px) {
+  header {
+    max-width: 480px;
+  }
+}
+header ul {
+  display: flex;
+  padding-right: 40px;
+}
+header ul li {
+  list-style: none;
+}
+@media screen and (max-width: 480px) {
+  header ul li {
+    font-size: 16px;
+  }
+}
+header ul li a {
+  text-decoration: none;
+  color: rgb(242, 242, 242);
+  padding-left: 24px;
+  transition: 0.3s;
+}
+header ul li a:hover {
+  color: rgb(148, 45, 47);
+  transition: 0.3s;
+  cursor: pointer;
+}
+header .head-title {
+  letter-spacing: 4px;
+}
+header .head-title h2 {
+  font-size: 24px;
+}
+@media screen and (max-width: 480px) {
+  header .head-title h2 {
+    font-size: 16px;
+  }
+}
+header .head-title h2 a {
+  color: rgb(242, 242, 242);
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+div.main-title {
+  background-color: rgb(242, 242, 242);
+  height: 720px;
+  background-image: url(images/title.jpg);
+  background-size: cover;
+  border-bottom: solid 0.4px rgb(242, 242, 242);
+}
+@media screen and (max-width: 480px) {
+  div.main-title {
+    height: 100%;
+  }
+}
+div.main-title div.title {
+  padding-top: 240px;
+  letter-spacing: 4px;
+  display: inline-block;
+}
+div.main-title div.title h1 {
+  font-size: 160px;
+  margin-left: 24px;
+  font-family: "meiryo";
+  color: rgb(51, 51, 51);
+}
+@media screen and (max-width: 480px) {
+  div.main-title div.title h1 {
+    font-size: 64px;
+  }
+}
+
+main section {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+main section h4.sub-title {
+  font-size: 40px;
+  font-weight: normal;
+}
+@media screen and (max-width: 480px) {
+  main section h4.sub-title {
+    font-size: 20px;
+  }
+}
+main section p.sub-text {
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  main section p.sub-text {
+    font-size: 8px;
+  }
+}
+main #sec1 {
+  background-color: rgb(51, 51, 51);
+  color: rgb(242, 242, 242);
+  height: 100%;
+}
+main #sec1 div.pro-text {
+  margin-top: 40px;
+  margin-left: 48px;
+}
+main #sec1 div.pro-text div.s-t-1 p {
+  font-size: 24px;
+  margin-right: 16px;
+}
+@media screen and (max-width: 480px) {
+  main #sec1 div.pro-text div.s-t-1 p {
+    font-size: 16px;
+  }
+}
+main #sec1 div.pro-text div.s-t-2 p {
+  font-size: 16px;
+  margin: 40px 16px 16px 16px;
+  border-top: solid 1px rgb(242, 242, 242);
+  border-bottom: solid 1px rgb(242, 242, 242);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main #sec1 div.pro-text div.s-t-2 p span {
+  border-bottom: solid 1px rgb(242, 242, 242);
+}
+@media screen and (max-width: 480px) {
+  main #sec1 div.pro-text div.s-t-2 p {
+    font-size: 12px;
+  }
+}
+main #sec1 div.pro-text ul.profile {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  margin-right: 40px;
+  width: auto;
+  text-align: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 480px) {
+  main #sec1 div.pro-text ul.profile {
+    flex-wrap: wrap;
+  }
+}
+main #sec1 div.pro-text ul.profile li.pro-li {
+  list-style: none;
+  background-color: rgb(242, 242, 242);
+  border-radius: 16px;
+  padding: 24px 32px 40px 32px;
+  width: 350px;
+  height: auto;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 480px) {
+  main #sec1 div.pro-text ul.profile li.pro-li {
+    margin: 10px;
+  }
+}
+main #sec1 div.pro-text ul.profile li.pro-li h4.join {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  content: 8px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+main #sec1 div.pro-text ul.profile li.pro-li img.pro-img {
+  height: 160px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 480px) {
+  main #sec1 div.pro-text ul.profile li.pro-li img.pro-img {
+    height: 80px;
+  }
+}
+main #sec1 div.pro-text ul.profile li.pro-li h5.pro-content {
+  color: rgb(51, 51, 51);
+  text-align: center;
+  margin-top: 8px;
+}
+main #sec1 div.pro-text ul.profile li.pro-li p.content-text {
+  color: rgb(51, 51, 51);
+  border-radius: 8px;
+  margin-top: 24px;
+  font-size: 12px;
+  display: inline-block;
+  text-align: left;
+}
+@media screen and (max-width: 480px) {
+  main #sec1 div.pro-text ul.profile li.pro-li p.content-text {
+    font-size: 6px;
+  }
+}
+main #sec2 {
+  height: 320px;
+  background-color: rgb(242, 242, 242);
+  color: rgb(51, 51, 51);
+}
+main #sec2 div.new-text {
+  margin-top: 40px;
+  margin-left: 48px;
+}
+main #sec2 div.new-text li {
+  margin-top: 0px;
+  list-style: none;
+}
+@media screen and (max-width: 480px) {
+  main #sec2 div.new-text li {
+    font-size: 16px;
+  }
+}
+main #sec2 div.new-text li a {
+  margin-left: 8px;
+  text-decoration: none;
+}
+main #sec2 div.new-text li a:hover {
+  color: rgb(148, 45, 47);
+  transition: 0.3s;
+  opacity: 0.6;
+  cursor: pointer;
+}
+main #sec2 div.new-text li a::before {
+  content: "→";
+  margin-right: 4px;
+}
+main #sec3 {
+  height: 1200px;
+  background-color: rgb(51, 51, 51);
+  color: rgb(242, 242, 242);
+}
+@media screen and (max-width: 480px) {
+  main #sec3 {
+    height: 800px;
+  }
+}
+main #sec3 div.ski-text {
+  margin-top: 40px;
+  margin-left: 48px;
+}
+main #sec3 div.ski-text p.sub-text {
+  margin-right: 16px;
+}
+main #sec3 div.ski-text div.ski-content h5 {
+  margin: 80px 0 24px 0;
+}
+main #sec3 div.ski-text div.ski-content div.shinki {
+  margin-left: 32px;
+}
+main #sec3 div.ski-text div.ski-content div.shinki a {
+  margin: 16px;
+  color: rgb(242, 242, 242);
+  text-decoration: none;
+}
+main #sec3 div.ski-text div.ski-content div.shinki a img {
+  width: 400px;
+  margin-top: 64px;
+}
+@media screen and (max-width: 480px) {
+  main #sec3 div.ski-text div.ski-content div.shinki a img {
+    width: 75%;
+  }
+}
+main #sec3 div.ski-text div.ski-content div.shinki a p {
+  margin-left: 56px;
+}
+@media screen and (max-width: 480px) {
+  main #sec3 div.ski-text div.ski-content div.shinki a p {
+    font-size: 8px;
+    margin-left: 32px;
+  }
+}
+main #sec3 div.ski-text div.ski-content div.shinki a:hover {
+  text-decoration: underline;
+  color: rgb(242, 242, 242);
+  transition: 0.3s;
+  opacity: 0.6;
+  cursor: pointer;
+}
+main #sec3 div.ski-text div.ski-content div.github a {
+  margin: 16px;
+  color: rgb(242, 242, 242);
+  text-decoration: none;
+}
+main #sec3 div.ski-text div.ski-content div.github a::before {
+  content: "→";
+  margin-right: 4px;
+}
+main #sec3 div.ski-text div.ski-content div.github a:hover {
+  color: rgb(242, 242, 242);
+  transition: 0.3s;
+  opacity: 0.6;
+  cursor: pointer;
+}
+main #sec3 div.ski-text div.ski-content div.slide-show {
+  width: 400px;
+  margin: 16px 40px;
+}
+@media screen and (max-width: 480px) {
+  main #sec3 div.ski-text div.ski-content div.slide-show {
+    width: 75%;
+  }
+}
+main #sec3 div.ski-text div.ski-content div.slide-show img {
+  margin: 0 auto;
+  width: 320px;
+  height: 320px;
+}
+@media screen and (max-width: 480px) {
+  main #sec3 div.ski-text div.ski-content div.slide-show img {
+    width: 100%;
+    height: 100%;
+  }
+}
+main #sec4 {
+  height: 640px auto;
+  background-color: rgb(242, 242, 242);
+  color: rgb(51, 51, 51);
+}
+@media screen and (max-width: 480px) {
+  main #sec4 {
+    height: 400px;
+  }
+}
+main #sec4 div.con-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  main #sec4 div.con-text {
+    flex-wrap: wrap;
+  }
+}
+main #sec4 div.con-text div.flex {
+  display: flex;
+}
+@media screen and (max-width: 480) {
+  main #sec4 div.con-text div.flex {
+    flex-wrap: wrap;
+  }
+}
+main #sec4 div.con-text h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 40px;
+  -webkit-text-decoration: underline rgb(51, 51, 51);
+          text-decoration: underline rgb(51, 51, 51);
+}
+@media screen and (max-width: 480px) {
+  main #sec4 div.con-text h5 {
+    margin-left: 24px;
+  }
+}
+main #sec4 div.con-text p.sub-text {
+  margin-top: 40px;
+  margin-left: 48px;
+}
+main #sec4 div.con-text div.map iframe {
+  margin: 16px 16px 16px 160px;
+}
+@media screen and (max-width: 480px) {
+  main #sec4 div.con-text div.map iframe {
+    margin-left: 36px;
+    width: 80%;
+    height: 100%;
+  }
+}
+
+div.page-top a {
+  background: rgb(200, 200, 200);
+  color: rgb(51, 51, 51);
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+  letter-spacing: 4px;
+}
+div.page-top a:hover {
+  color: rgb(242, 242, 242);
+  background: rgb(148, 45, 47);
+}
+
+footer {
+  background-color: rgb(51, 51, 51);
+  color: rgb(242, 242, 242);
+  height: 32px;
+  text-align: center;
+}
+
+#sub {
+  height: 100vh;
+  background-color: rgb(242, 242, 242);
+  color: rgb(51, 51, 51);
+}
+#sub div.sp {
+  height: 80px;
+}
+#sub div.new-text {
+  margin-top: 40px;
+  margin-left: 48px;
+}
+#sub div.new-text li {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  list-style: none;
+  list-style: decimal-leading-zero;
+}
+@media screen and (max-width: 480px) {
+  #sub div.new-text li {
+    font-size: 16px;
+  }
+}
+#sub div.new-text li a {
+  margin-left: 4px;
+  text-decoration: none;
+}
+#sub div.new-text li a:hover {
+  color: rgb(148, 45, 47);
+  transition: 0.3s;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/*== ヘッダー追従のためのCSS */
+html {
+  scroll-padding-top: 70px;
+}
+
+#header {
+  position: fixed; /*追従ナビのためpositionをfixedにする*/
+  top: 0; /*ポジション設定topを0*/
+  height: 70px; /*headerの高さを指定*/
+  width: 100%; /*position:fixed;にしたため、横幅100%を設定*/
+  text-align: center;
+  padding: 20px;
+}
+
+/*--------画像サイズ調整---------*/
+img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*-----------height調整----------*/
+.slick-slide {
+  height: auto !important;
+}
+
+/*-----------矢印表示----------*/
+.slick-next {
+  right: 0px !important;
+}
+
+.slick-prev {
+  left: 0px !important;
+}
+
+.slick-arrow {
+  width: initial !important;
+  height: initial !important;
+  z-index: 2 !important;
+}
+
+.slick-arrow:before {
+  font-size: 30px !important;
+}/*# sourceMappingURL=style.css.map */

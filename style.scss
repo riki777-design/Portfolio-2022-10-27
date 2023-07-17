@@ -1,0 +1,538 @@
+$main-color:rgb(242, 242, 242);
+$sub-color:rgb(51,51,51);
+$accent-color:rgb(148, 45, 47);
+
+@mixin p-margin {
+    margin-top: 40px;
+    margin-left: 48px;
+}
+
+// ------------------------------------
+
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+
+header{
+    background-color:$sub-color;
+    color:$main-color;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 48px;
+    border-bottom:solid 0.4px $main-color;
+    z-index: 3;
+
+    @media screen and(max-width:480px){
+        max-width: 480px;
+    }
+    
+    ul {
+        display: flex;
+        padding-right:40px;
+        
+        li{
+            list-style: none;
+            @media screen and(max-width:480px){
+                font-size: 16px;
+            }
+        
+        }
+        
+        li a{
+            text-decoration: none;
+            color: $main-color;
+            padding-left:24px;
+            transition: 0.3s;
+            
+            &:hover{
+                color:$accent-color;
+                transition: 0.3s;
+                cursor:pointer;
+            }
+        }
+    }
+    .head-title {
+        letter-spacing:4px;
+        h2 {
+            font-size: 24px;
+        
+            @media screen and(max-width:480px){
+                font-size: 16px;
+            }
+        
+            a{
+                color: $main-color;
+                padding-left: 40px;
+                text-decoration: none;
+            }
+        }
+
+    }
+    
+}
+
+
+div.main-title{
+    background-color:$main-color;
+    height: 720px;
+    background-image:url(images/title.jpg);
+    background-size: cover;
+    border-bottom:solid 0.4px $main-color;
+    @media screen and(max-width:480px){
+        height: 100%;
+    }
+
+
+    div.title{
+        padding-top:240px;
+        letter-spacing:4px;
+        display: inline-block;
+
+        h1{
+            font-size: 160px;
+            margin-left: 24px;
+            font-family:"meiryo";
+            color: $sub-color;
+            @media screen and (max-width:480px) {
+                font-size: 64px; 
+            }
+            
+        }
+    }
+}
+
+// 各セクション
+main{
+
+    section{
+
+        padding-top:40px;
+        padding-left: 40px;
+
+        h4.sub-title{
+            font-size: 40px;
+            font-weight: normal;
+            @media screen and(max-width:480px){
+                font-size: 20px;
+            }
+
+        }
+        p.sub-text{
+            font-size: 16px;
+            @media screen and(max-width:480px){
+                font-size: 8px;
+            }
+
+        }
+    }
+
+    #sec1{
+        background-color:$sub-color;
+        color: $main-color;
+        height: 100%;
+        @media screen and(max-width:480px){
+        }
+
+
+        div.pro-text{
+            @include p-margin();
+            div.s-t-1 p{
+                font-size: 24px; 
+                margin-right: 16px;
+                @media screen and(max-width:480px){
+                    font-size: 16px;
+                }
+    
+            }
+            div.s-t-2 p{
+                font-size: 16px;                
+                margin: 40px 16px 16px 16px;
+                border-top:solid 1px $main-color;
+                border-bottom:solid 1px $main-color;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                width:fit-content;
+
+                span{
+                    border-bottom: solid 1px $main-color;
+                }
+                @media screen and(max-width:480px){
+                    font-size: 12px;
+                }
+    
+            }
+            
+            ul.profile{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 64px;
+                margin-right: 40px;
+                width: auto;
+                text-align: center;
+                justify-content: space-around;
+                @media screen and(max-width:480px){
+                    flex-wrap: wrap;                    
+                }
+    
+
+                li.pro-li{
+                    list-style:none;
+                    background-color: $main-color;
+                    border-radius: 16px;
+                    padding:24px 32px 40px 32px;
+                    width: 350px;
+                    height: auto;
+                    margin-bottom: 16px;
+
+                    @media screen and(max-width:480px){
+                        margin: 10px;
+                    }
+
+                    
+                    h4.join{
+                        color: $sub-color;
+                        font-size: 16px;
+                        content: 8px;
+                        text-align: center;
+                        margin-bottom: 8px;
+                    }
+                    img.pro-img{
+                        height: 160px;
+                        width: auto;
+                        display: block;
+                        margin: auto;
+                        @media screen and(max-width:480px){
+                            height: 80px;
+                        }
+    
+                    }
+                    h5.pro-content{
+                        color: $sub-color;
+                        text-align: center;
+                        margin-top: 8px;
+                    }
+                    p.content-text{
+                        color: $sub-color;
+                        // background-color: rgba(200, 200, 200, 0.5);
+                        // padding: 24px 24px;
+                        border-radius: 8px;
+                        margin-top: 24px;
+                        font-size: 12px;
+                        display: inline-block;
+                        text-align: left;
+                        @media screen and(max-width:480px){
+                            font-size: 6px;
+                            
+                        }
+    
+
+                    }
+                }
+            }
+        }        
+    }
+    
+    #sec2{
+        height: 320px;
+        background-color:$main-color;
+        color: $sub-color;
+       
+        div.new-text{
+            @include p-margin();
+            li{
+                margin-top: 0px;
+                list-style: none;
+                @media screen and(max-width:480px){
+                    font-size: 16px;
+                }
+                a{
+                    margin-left: 8px;
+                    text-decoration:none;
+                    &:hover{
+                        color:$accent-color;
+                        transition: 0.3s;
+                        opacity: 0.6;
+                        cursor:pointer;
+
+                    }
+                    &::before{
+                        content: "→";
+                        margin-right: 4px;
+                    }
+                }
+    
+            }
+
+        }       
+    }
+
+    #sec3{
+        height: 1200px;
+        background-color:$sub-color;
+        color: $main-color;
+
+        @media screen and(max-width:480px){
+            height: 800px;
+        }
+
+
+        div.ski-text{
+            p.sub-text{
+                margin-right: 16px;
+            }
+            @include p-margin();
+            div.ski-content{
+                h5{
+                    margin: 80px 0 24px 0;
+                }
+
+                div.shinki{
+
+                    margin-left: 32px;
+                    a{
+                        margin: 16px;
+                        color: $main-color;
+                        text-decoration: none;
+                            
+                        img{
+                            width: 400px;
+                            margin-top: 64px;
+                            @media screen and(max-width:480px){
+                                width:75%;
+                            }
+                        }
+                        p{
+                            margin-left: 56px;   
+                            @media screen and(max-width:480px){
+                                font-size: 8px;
+                                margin-left: 32px;
+                            }                         
+                        }
+                        &:hover{
+                            text-decoration: underline;
+                            color:$main-color;
+                            transition: 0.3s;
+                            opacity: 0.6;
+                            cursor:pointer;
+                        }
+                    }
+                }
+
+                div.github{
+                    a{
+                        margin: 16px;
+                        color: $main-color;
+                        text-decoration: none;
+                        &::before{
+                            content: "→";
+                            margin-right: 4px;
+                        }
+                        &:hover{
+                            color:$main-color;
+                            transition: 0.3s;
+                            opacity: 0.6;
+                            cursor:pointer;
+                        }
+                    }
+                }
+
+                div.slide-show{
+                    width: 400px;
+                    margin:16px 40px;
+
+                    @media screen and(max-width:480px){
+                        width: 75%;
+                    }
+        
+                    
+                    img{
+                        margin: 0 auto;
+                        width: 320px;
+                        height: 320px;
+                        @media screen and(max-width:480px){
+                            width: 100%;
+                            height: 100%;
+                        }
+    
+                    }
+                }
+            }
+
+        } 
+            
+
+    }
+    
+    #sec4{
+        height: 640px auto;
+        background-color:$main-color;
+        color: $sub-color;
+        @media screen and(max-width:480px){
+            height: 400px;
+        }
+
+        
+        div.con-text{
+            display: flex;
+            flex-wrap: wrap;
+            @media screen and(max-width:480px){
+                flex-wrap: wrap;
+            }
+
+
+            div.flex{
+                display: flex;
+                @media screen and(max-width:480){
+                    flex-wrap: wrap;
+                }
+            
+            }
+            h5{
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 40px;
+                margin-left: 40px;
+                text-decoration:underline  $sub-color;
+                @media screen and(max-width:480px){
+                    margin-left: 24px;
+                }
+
+            }
+            p.sub-text{
+                @include p-margin();
+            }      
+            div.map{
+                iframe{
+                    margin: 16px 16px 16px 160px;
+                    
+                    @media screen and(max-width:480px){
+                        margin-left: 36px;
+                        width: 80%;
+                        height: 100%;
+                        
+                    }
+                
+
+                }
+            }
+        }
+    }
+}
+
+
+// ページTOPへのリンク
+div.page-top a{
+    
+    background:rgb(200, 200, 200);
+    color:$sub-color;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding:20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+    letter-spacing:4px;
+    
+    
+    &:hover{
+        color: $main-color;
+        background:$accent-color;
+    }
+
+}
+
+footer{
+    background-color: $sub-color;
+    color: $main-color;
+    height: 32px;
+    text-align: center;
+}
+
+
+#sub{
+    height: 100vh;
+    background-color:$main-color;
+    color: $sub-color;
+    
+    div.sp{
+        height: 80px;    
+    }
+    div.new-text{
+
+        @include p-margin();
+        li{
+            margin-top: 0px;
+            margin-bottom: 8px;
+            list-style: none;
+            list-style:decimal-leading-zero;
+            @media screen and(max-width:480px){
+                font-size: 16px;
+            }
+            a{
+                margin-left: 4px;
+                text-decoration:none;
+                &:hover{
+                    color:$accent-color;
+                    transition: 0.3s;
+                    opacity: 0.6;
+                    cursor:pointer;
+
+                }
+                // &::before{
+                //     content: "→";
+                //     margin-right: 4px;
+                // }
+            }
+
+        }
+
+    }       
+}
+
+
+
+/*== ヘッダー追従のためのCSS */
+html{
+    scroll-padding-top: 70px; // ヘッダーのリンク先、位置調整 
+}
+#header{
+    position: fixed;/*追従ナビのためpositionをfixedにする*/
+    top:0;/*ポジション設定topを0*/
+    height: 70px;/*headerの高さを指定*/
+    width:100%;/*position:fixed;にしたため、横幅100%を設定*/
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/*--------画像サイズ調整---------*/
+img{
+	width:80%;
+    margin: 0 auto;
+}
+/*-----------height調整----------*/
+.slick-slide{
+	height:auto!important;
+}
+/*-----------矢印表示----------*/
+.slick-next{
+    right:0px !important;
+}
+.slick-prev{
+    left:0px !important;
+}
+.slick-arrow{
+    width: initial!important;
+    height: initial!important;
+    z-index:2!important;
+}
+.slick-arrow:before{
+    font-size: 30px!important;
+}
